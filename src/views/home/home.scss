@@ -3,20 +3,21 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    margin-top: 25px;
     background: no-repeat;
+    font-size: 35px;
     background-size: 100%;
-     background-image: url('../../assets/bankbg1.jpg');
-        
-    
-
-    /**
-     * Add child element selectors here.
-     * For example:
-     *
-     * .my-child-element {
-     *    color: red;
-     *  }    
-     */
-     
+    background-color: aliceblue;
+     background-image: url('../../assets/welcomebg.jpg'); 
+ 
 }
+
+.container {
+    padding: 16px;
+    background-color: aliceblue;
+    border-radius: 1px;
+   
+  }
+  img{
+    margin-left: 500px;
+  }
+  

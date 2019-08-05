@@ -1,4 +1,4 @@
-# vue-starter
+# BankingSolutionWebApp
 
 ## Project setup
 ```

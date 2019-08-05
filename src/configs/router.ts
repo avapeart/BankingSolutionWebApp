@@ -29,5 +29,11 @@ export default new Router({
       component: () =>
       import(/* webpackChunkName: "login" */ '@/views/register'),
     },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () =>
+      import(/* webpackChunkName: "login" */ '@/views/dashboard'),
+    },
   ],
 });

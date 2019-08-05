@@ -1,6 +1,6 @@
 {
-  "name": "vue-starter",
-  "short_name": "vue-starter",
+  "name": "BankingSolutionWebApp",
+  "short_name": "BankingSolutionWebApp",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

@@ -3,7 +3,7 @@
 <template>
   <div id="app" 
       :class="['theme', 'app', $store.getters['app/theme']]">
-    <navigation></navigation>
+    
     <main>
       <transition :duration="500" name="fade" mode="out-in">
         <!--  

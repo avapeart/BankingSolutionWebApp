@@ -29,35 +29,4 @@
   </div>
 </template>
 
-    
-<script>
-    export default {
-        mounted() {
-            // print('Component mounted.');
-        },
-        data() {
-            return {
-              email: '',
-              password: '',
-              output: '',
-            };
-        },
-        methods: {
-            formSubmit(e) {
-                e.preventDefault();
-                const currentObj = this;
-                this.axios.post('http://localhost:4003/api/login', {
-                    email: this.email,
-                    password: this.password,
-                })
-                .then( ( response ) => {
-                    localStorage.setItem('token', response.data.token);
-                    currentObj.output = response.data;
-                })
-                .catch( ( error ) => {
-                    currentObj.output = error;
-                });
-            },
-        },
-    };
-</script>
+ 
