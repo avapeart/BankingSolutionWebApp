@@ -27,19 +27,25 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: () =>
-      import(/* webpackChunkName: "login" */ '@/views/register'),
+      import('@/views/register'),
     },
     {
       path: '/dashboard',
       name: 'dashboard',
       component: () =>
-      import(/* webpackChunkName: "login" */ '@/views/dashboard'),
+      import( '@/views/dashboard'),
     },
     {
       path: '/transfer',
       name: 'transfer',
       component: () =>
-      import(/* webpackChunkName: "login" */ '@/views/transfer'),
+      import('@/views/transfer'),
+    },
+    {
+      path: '/jointAccount',
+      name: 'jointAccount',
+      component: () =>
+      import('@/views/jointAccount'),
     },
   ],
 });

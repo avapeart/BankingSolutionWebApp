@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import Axios from 'axios';
+import RegisterView from '../register';
 
 
 @Component({
@@ -8,7 +9,7 @@ import Axios from 'axios';
   },
   name: 'dashboard',
 })
-export default class DasboardView extends Vue {
+export default class DasboardView extends RegisterView  {
   public account: any = {};
 
   public transactions: any = {};
@@ -29,8 +30,28 @@ export default class DasboardView extends Vue {
     super();
   }
 
-  private mounted() {
+  public submitForm( e: any ) {
+    e.preventDefault();
+    const currentObj = this;
+    this.axios.post('http://localhost:4003/api/jointAccount', {
+        email: this.email,
+        phonenumber: this.phonenumber,
+        trn: this.trn,
+        username: this.username,
+        password: this.password,
+    }, this.axiosConfig).then( ( response ) => {
+      window.location.href = '#/dashboard';
+      alert('Account Updated!');
+  })
+    // add a redirect to the login page
+    .catch( ( error ) => {
+        currentObj.output = error;
+    });
+  }
+
+   public mounted() {
     // TODO: stuff to do when this component loads
+    // super.mounted();
     this.getAccount();
     this.getTransactions();
     }

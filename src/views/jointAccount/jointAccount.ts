@@ -4,9 +4,9 @@ import Component from 'vue-class-component';
 @Component({
   components: {
   },
-  name: 'register',
+  name: 'jointAccount',
 })
-export default class RegisterView extends Vue {
+export default class JointAccountView extends Vue {
   public email = '';
   public phonenumber = '';
   public trn = '';
@@ -37,7 +37,7 @@ export default class RegisterView extends Vue {
             currentObj.output = error;
         });
     }
-  public mounted() {
+  private mounted() {
     // a
   }
 }
