@@ -35,5 +35,11 @@ export default new Router({
       component: () =>
       import(/* webpackChunkName: "login" */ '@/views/dashboard'),
     },
+    {
+      path: '/transfer',
+      name: 'transfer',
+      component: () =>
+      import(/* webpackChunkName: "login" */ '@/views/transfer'),
+    },
   ],
 });

@@ -3,6 +3,9 @@
 
 <template>
   <div class="login-view">
+    <div class="firstcontainer">
+    <img src='../../assets/logoOnly.jpg' id='loginlogo'>
+    <br><br>
     <h1>Welcome! 
       Please enter your credentials to continue.
     </h1>
@@ -12,6 +15,7 @@
 
 
   <div class="container">
+    
     
       <label for="email"><b>E-mail</b></label>
       <input type="email" placeholder="Enter e-mail address" v-model="email" required>
@@ -25,7 +29,8 @@
   <div class="container" >
     <span class="register">If you don't have an account <a href="#/register">OPEN ONE HERE!</a></span>
   </div>
-</form>  
+</form> 
+    </div> 
   </div>
 </template>
 

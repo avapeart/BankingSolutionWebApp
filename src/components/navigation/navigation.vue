@@ -3,8 +3,8 @@
 <template>
   <div class="navigation"> 
     <nav>
-      <router-link to="/"><b>Home</b></router-link>
-      <router-link to="/login"><b>Login</b></router-link>
+      <router-link to="/dashboard" id="home"><b>Home</b></router-link>
+      <router-link to="/transfer" id="transfer"><b>Transfer</b></router-link>
     </nav>
     <!-- <select @change="$store.dispatch('app/theme', $event.target.value)">
       <option value="default" selected>Default Theme</option>

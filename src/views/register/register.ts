@@ -30,6 +30,7 @@ export default class RegisterView extends Vue {
             password: this.password,
         }).then( ( response ) => {
           window.location.href = '#/login';
+          alert('Account Created!');
       })
         // add a redirect to the login page
         .catch( ( error ) => {

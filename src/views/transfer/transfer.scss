@@ -1,7 +1,9 @@
 .transfer-view {
     display: grid;
     align-content: center;
+    margin-top: 35px;
     justify-content: center;   
+    background-color: white;
 }
 
 .transfer{
@@ -15,6 +17,18 @@ input[type=number] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+#img{
+  margin-top:-15px;
+  float: left;
+  margin-left: -218px;
+  padding: 16px;
+  padding-left:15rem;
+  border-radius: 5px;
+  width: 600px;
+  height: 345px;
+  
 }
 
 button {
@@ -32,10 +46,13 @@ button:hover {
   opacity: 0.8;
 }
 
-.container {
+.transfer-container {
   padding: 16px;
   background-color: aliceblue;
   border-radius: 5px;
+  margin: auto;
+  margin-left: 50%;
+  width: 500px;
   color: #333;
   font-family: sans-serif;
  

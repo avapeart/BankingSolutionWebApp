@@ -6,40 +6,42 @@ import Component from 'vue-class-component';
   },
   name: 'transfer',
 })
-export default class TranferView extends Vue {
-  // --------------------------------------------------------------------------
-  // [Private] Fields
-  // --------------------------------------------------------------------------
-
-  // --------------------------------------------------------------------------
-  // [Public] Constructor
-  // --------------------------------------------------------------------------
+export default class TransferView extends Vue {
+  public senderno = '';
+  public receiverno = '';
+  public amount = '';
+  public output = '';
 
   constructor() {
     super();
   }
 
-  // --------------------------------------------------------------------------
-  // [Public] Accessors
-  // --------------------------------------------------------------------------
 
-  // --------------------------------------------------------------------------
-  // [Public] Methods
-  // --------------------------------------------------------------------------
-
-  // --------------------------------------------------------------------------
-  // [Private] Event Handlers
-  // --------------------------------------------------------------------------
-
-  // --------------------------------------------------------------------------
-  // [Private] Methods
-  // --------------------------------------------------------------------------
-
-  // --------------------------------------------------------------------------
-  // [Private] Lifecycle Hooks
-  // --------------------------------------------------------------------------
-
+    public formSubmit( e: any ) {
+        e.preventDefault();
+        const currentObj = this;
+        this.axios.post('http://localhost:4003/api/transfer', {
+            senderno: this.senderno,
+            receiverno: this.receiverno,
+            amount: this.amount,
+        }, axiosConfig)
+        .then( ( response ) => {
+          window.location.href = '#/dashboard';
+          alert('Transfer successfull!');
+      })
+        // add a redirect to the login page
+        .catch( ( error ) => {
+            currentObj.output = error;
+        });
+    }
   private mounted() {
-    // TODO: stuff to do when this component loads.
+    // a
   }
 }
+
+
+const axiosConfig = {
+  headers: {
+      Authorization: 'Bearer ' + localStorage.getItem('token'),
+  },
+};

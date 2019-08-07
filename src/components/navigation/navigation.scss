@@ -2,25 +2,34 @@
 
 .navigation {
     padding-top: 35px;
-    display: grid;
+    
     grid-column-gap: $theme-gap-xs;
     grid-template-columns: 1fr auto auto 1fr;
     justify-items: right;
     align-items: right;
     text-transform: uppercase;
     font-size: 20px;
-    background-color: #4CAF50;
-
     
+    
+
     nav {
-        display: grid;
-        grid-auto-flow: column;
-        grid-column-gap: $theme-gap-xs;
-        grid-column: 2;
-        padding: 0rem $theme-gap-xs;
+     
+        // display: grid;
+        // grid-auto-flow: column;
+        // grid-column-gap: $theme-gap-xs;
+        // grid-column: 2;
+        // // padding: 0rem $theme-gap-xs;
     }
     select {
         grid-column: 3;
     }
   
+}
+#home{
+    -webkit-text-fill-color: white;
+    margin-left:130rem;   
+}
+#transfer{
+    -webkit-text-fill-color: white;
+    margin-left:25px; 
 }

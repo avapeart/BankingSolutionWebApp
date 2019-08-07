@@ -1,23 +1,62 @@
 .home-view {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
     background: no-repeat;
     font-size: 35px;
     background-size: 100%;
     background-color: aliceblue;
-     background-image: url('../../assets/welcomebg.jpg'); 
+    background-image: url('../../assets/coins.jpg'); 
  
 }
+#home-container{
+  margin-top: 90px;
+  -webkit-text-fill-color: white;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px; 
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 225%;
+  -webkit-text-fill-color: white;
+}
 
+#a-link{
+  -webkit-text-fill-color: white;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#logo{
+  width: 20%;
+  border-radius: 60%;
+}
+
+#rightbut{
+  margin-top: 15px;
+    padding-top:50px;
+    float: left;
+    margin-left: 450px;
+    
+}
+
+#leftbut{
+  margin-top: 15px;
+  padding-top:50px;
+  float: right;
+  margin-right: 650px;
+
+}
 .container {
     padding: 16px;
-    background-color: aliceblue;
     border-radius: 1px;
    
   }
-  img{
-    margin-left: 500px;
-  }
+  
   
